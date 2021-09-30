@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-height: 100vh;
+}
+p{
+	line-height: 1.5rem;
+}
+
+.carousel {
+  width:720px;
+}
+
+.carousel-item:before{
+	content: "";
+	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bgDark{
+	background-color: #213548;
+}
+
+.titulo{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing: 0.15rem;
+	text-transform: uppercase;
+	color: #0072e1;
+	padding-bottom: 3rem;
+	box-sizing: border-box;
+	text-align: center;
+}
+.subtitulo{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 1.75rem;
+	letter-spacing: 0.15rem;
+	text-transform: uppercase;
+	color: #0072e1;
+	padding: 2rem 0rem;
+	box-sizing: border-box;
+	text-align: center;
+}
+.paddingStyle1{
+	padding: 3rem 0;
+}
+.paddingStyleBottom1{
+	padding-bottom: 3rem;
+}
+.enfasis{
+	color: #1e81b0;
+}
+
+.button{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	padding: 0.5rem 0.75rem;
+	margin-top: 2rem;
+	background-color: #0072e1;
+}
+
+#header{
+	background-color: #213548;
+	/*height: 80px;*/
+	width: 100%;
+	top: 0;
+	position: fixed;
+	overflow: auto;
+	z-index: 100;
+}
+#header .container {
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#header .logo{
+	padding: 0px 10px;
+}
+/*
+#header .navbarFont{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+*/
+#header .navigationBar{
+	flex-grow: 1;
+	text-align: right;
+	padding-right: 1rem;
+}
+#header li{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0 0.5rem;
+}
+#header .navigationBar a{
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+#header .navigationBar a:hover{
+	color: #0072e1;
+}
+
+#homeWelcome{
+	padding-top: 80px;
+}
+
+#homeWelcome .welcomeArea{
+	background-image: url('../media/welcome.jpg');
+	background-size: cover;
+	background-position: 50% 75%;
+	background-repeat: no-repeat;
+	height: 70vh;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+#homeWelcome .welcomeArea .titulo{
+	font-size: 3.5rem;
+	color: #fff;
+}
+
+#homeAbout{
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 85%, rgba(229,236,243,1) 100%);
+}
+#homeAbout .aboutContent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+#homeAbout .aboutContent .aboutImg img{
+	display: block;
+}
+#homeAbout .aboutContent .aboutText{
+	width: 40%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#homeServices{
+	background-color: #e5ecf3;
+}
+#homeServices .servicesContent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+#homeServices .servicesContent .item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;
+	text-align: center;
+}
+#homeServices .servicesContent .item img{
+	margin: 1rem;
+}
+
+#homeServices .servicesContent .item .subtitulo{
+	font-size: 1.25rem;
+	text-transform: none;
+	padding: 1rem 0rem;
+}
+
+#homeVideo{
+	background-color: black;
+	height: 315px;
+}
+#homeVideo .container{
+	display: flex;
+	justify-content: center;
+}
+#homeContact{
+}
+#footer{
+	background-color: #154c79;
+}
+#footer li{
+	list-style: none;
+}
+#footer a{
+	text-decoration: none;
+	color: #fff;
+}
+#empresa, #servicios, #contacto, #ofertaslaborales, #formulario {
+	padding-top: 128px;
+}
+#empresa .mainAbout{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#empresa .mainAbout .aboutItem{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0px 0px;
+}
+#empresa .mainAbout .aboutItem .aboutImg img{
+	display: block;
+	padding: 20px;
+}
+#empresa .mainAbout .aboutItem .aboutImg.aboutImage01{
+	transform: rotate(-10deg);
+}
+#empresa .mainAbout .aboutItem .aboutImg.aboutImage02{
+	transform: rotate(10deg);
+}
+#empresa .mainAbout .aboutItem .aboutText{
+	width: 50%;
+}
+#empresa .mainAbout .aboutItem .aboutText p{
+	padding-bottom: 20px;
+}
+
+#servicios .mainServices{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#servicios .mainServices .serviceItem{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+}
+#servicios .mainServices .serviceItem .serviceImg img{
+	display: block;
+	margin: 20px;
+}
+#servicios .mainServices .serviceItem .serviceText{
+	width: 60%;
+}
+#contacto .contactForm .subtitulo{
+	padding-top: 0px;
+}
+
+#contacto .contactDetail{
+	background-color: #e5ecf3;
+}
+#contacto .contactDetail p span{
+	font-weight: 700;
+}
+#contacto .contactForm{
+	border: 1px solid #aaa;
+	margin: 2em;
+	padding: 2em;
+}
+#contacto .contactForm .titulo{
+	padding-top: 0;
+}
+#ofertaslaborales.container{
+	max-width: 800px;
+}
+#ofertaslaborales .mainJob{
+	width: 800px;
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+	grid-template-rows: repeat(4, 50px);
+	grid-template-areas:
+	"jobRef jobDescription jobDescription jobLocation"
+	"jobDetail jobDetail jobDetail ."
+	"jobDetail jobDetail jobDetail ."
+	"jobDetail jobDetail jobDetail jobApply";
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+#ofertaslaborales .mainJob .jobRef{
+	grid-area: jobRef;
+	padding: 0.80rem;
+	border-bottom: 1px solid black;
+}
+#ofertaslaborales .mainJob .jobDescription{
+	grid-area: jobDescription;
+	padding: 0.80rem;
+	border: 1px solid black;
+	border-top: 0;
+}
+#ofertaslaborales .mainJob .jobLocation{
+	grid-area: jobLocation;
+	padding: 0.80rem;
+	border-bottom: 1px solid black;
+}
+#ofertaslaborales .mainJob .jobDetail{
+	grid-area: jobDetail;
+	align-self: start;
+	justify-self: start;
+	padding: 10px;
+}
+#ofertaslaborales .mainJob .jobApply{
+	grid-area: jobApply;
+	justify-self: center;
+/*	color: white;
+	background-color: #1e81b0;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+}
+#ofertaslaborales .mainJob .jobApply:hover{
+	background-color: #176286;
+}
+#ofertaslaborales .mainJob .jobApply a{
+	color: white;
+	text-decoration: none;
+}
+*/
