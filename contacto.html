@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto Final</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="header" class="container-fluid px-0 bgDark">
+		<div class="container-md">
+			<nav class="navbar navbar-expand-lg navbar-dark bgDark">
+				<div class="container-fluid">
+			    	<a class="navbar-brand" href="index.html"><img src="media/logo.png" alt="Logo" width="60px"></a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    	<span class="navbar-toggler-icon"></span>
+				    </button>
+			    	<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				    	<ul class="navbar-nav">
+					        <li class="nav-item">
+					        	<a class="nav-link" href="index.html">Inicio</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="empresa.html">Empresa</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="servicios.html">Servicios</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link active" aria-current="Contacto" href="contacto.html">Contacto</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="ofertaslaborales.html">Ofertas laborales</a>
+					        </li>
+					    </ul>
+			    	</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div id="contacto" class="container paddingStyle1">
+		<p class="titulo">Contacto</p>
+		<div>
+			<div class="contactDetail">
+				<p><span>Direccion:</span> Calle 705, Capital Federal</p>
+				<p><span>Telefono:</span> <a href="tel:+5491103034567">011 0303-4567</a><p>
+				<p><span>Mail:</span> <a href="mailto:info@empresa.com.ar">info@empresa.com.ar</a><p>
+			</div>
+		</div>
+		<div class="contactForm">
+			<p class="subtitulo">Formulario de Contacto</p>
+			<form class="row g-3 needs-validation" novalidate>
+				<div class="col-md-6">
+			  		<input type="text" class="form-control" id="validationName" placeholder="Nombre" required>
+			  	</div>
+			  	<div class="col-md-6">
+			    	<input type="text" class="form-control" id="validationSurname" placeholder="Apellido" required>
+			  	</div>
+			  	<div class="col-md-12">
+			    	<input type="email" class="form-control" id="validationMail" placeholder="Correo Electronico" required>
+			  	</div>
+			  	<div class="col-md-12">
+			    	<input type="phone" class="form-control" id="validationPhone" placeholder="Telefono" required>
+			  	</div>
+			  	<div class="input-group col-md-12">
+				  	<label class="input-group-text" for="inputContact">Motivo de Contacto</label>
+					<select class="form-select" id="inputContact">
+					    <option selected>...</option>
+					    <option value="1">Presupuesto</option>
+					    <option value="2">Consulta</option>
+					    <option value="3">Reclamo</option>
+					    <option value="4">Otro</option>
+					</select>
+			  	</div>
+			 	<div class="col-md-12">
+			  		<textarea class="form-control" id="contactTextArea" placeholder="Ingrese el texto aqui..." rows="3" required></textarea>
+			 	</div>
+				<div class="col-12">
+				    <div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="contactAcceptsPhonecall" checked>
+						<label class="form-check-label" for="contactAcceptsPhonecall">Deseo se comuniquen conmigo telefonicamente</label>
+					</div>
+			    </div>
+			  	<div class="col-12">
+			  		<button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Enviar
+					</button>
+			  		<button class="btn btn-secondary ms-3" type="reset">Limpiar</button>
+			  	</div>
+			</form>
+		</div> 
+	</div>
+	<div id="footer">
+		<ul class="container">
+			<li><a href="https://www.linkedin.com/empresa" target="_blank">LinkedIn</a></li>
+			<li><a href="https://www.facebook.com/empresa" target="_blank">Facebook</a></li>
+			<li><a href="https://www.twitter.com/empresa" target="_blank">Twitter</a></li>
+			<li><a href="https://www.instragram.com/empresa" target="_blank">Instagram</a></li>
+		</ul>
+	</div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<script>
+	(function() {
+		'use strict';
+		window.addEventListener('load', function() {
+	    	var forms = document.getElementsByClassName('needs-validation');
+	    	var validation = Array.prototype.filter.call(forms, function(form) {
+	    		form.addEventListener('submit', function(event) {
+	        		if (form.checkValidity() === false) {
+	          			event.preventDefault();
+	          			event.stopPropagation();
+	        		}
+	      		form.classList.add('was-validated');
+	      		}, false);
+	    	});
+		}, false);
+	})();
+	</script>
+</body>
+</html>
